@@ -212,7 +212,7 @@ def predicao():
 
     with tabs[0]:
         st.markdown("""            
-        <p style="text-indent: 2em; font-size: 20px">
+        <p style="text-indent: 2em; font-size: 20px; text-align: justify">
             O modelo de machine learning escolhido foi o XGBoost que é baseado em árvore de decisão e utiliza uma estrutura de gradient boosting. 
             Com a função TimeSeriesSplit, a base de dados original foi separada em quatro janelas de treino e teste, usando uma janela de teste de 90 dias. 
             A seguir segue a representação gráfica dos períodos utilizados para treino e teste:    
@@ -241,7 +241,7 @@ def predicao():
         st.pyplot(fig)
 
         st.markdown("""            
-        <p style="text-indent: 2em; font-size: 20px">
+        <p style="text-indent: 2em; font-size: 20px; text-align: justify">
             Na etapa de feature engineering foram criadas variáveis qualificadoras de sazonalidade e valores períodos anteriores para auxiliar no modelo de machine learning. 
             Segue a tabela com os valores do dataset original e suas features:    
         """, unsafe_allow_html=True)
@@ -251,7 +251,7 @@ def predicao():
 
 
         st.markdown("""            
-        <p style="text-indent: 2em; font-size: 20px">
+        <p style="text-indent: 2em; font-size: 20px; text-align: justify">
             Para o modelo de predição as features criadas possuem um grau de importância, a seguir segue um gráfico de barras com o ranking de importância de cada feature:    
         """, unsafe_allow_html=True)
         
